@@ -1,0 +1,100 @@
+{
+  "id": "csv2sql",
+  "author" : {
+    "name" : "core team"
+  },
+  "title": {
+    "fr" : "Converti du CSV en requete SQL d'insertion",
+    "en" : "Convert CSV to SQL insert/update query"
+  },
+  "description": {
+    "fr" : "Transforme un tableau CSV en requetes SQL se type INSERT ou UPDATE.",
+    "en": "Transforms a CSV array to SQL queries with INSERT or UPDATE verb."
+  },
+  "parameters" :  {
+    "tablename": {
+      "alias": "tn",
+      "type": "text",
+      "required": true,
+      "default": "mytable",
+      "size": "medium",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9-_:]*$",
+      "maxlength": "",
+      "label": {
+        "fr": "Nom de table",
+        "en": "Table name"
+      },
+      "help": {
+        "en": "Table name where lines will be inserted.",
+        "fr": "Nom de la table dans laquelle les lignes seront inserées."
+      }
+    },
+    "numrows": {
+      "alias": "nr",
+      "type": "number",
+      "required": false,
+      "default": 1,
+      "size": "medium",
+      "pattern": "^[0-9][0-9]*$",
+      "maxlength": "",
+      "label": {
+        "fr": "Nombre de lignes",
+        "en": "Number of rows"
+      },
+      "help": {
+        "fr": "Fixe le nombre de lignes à inserer en une seule requete SQL.",
+        "en": "Set the number of rows to insert with a single SQL query."
+      }
+    },
+    "title" : {
+      "alias": "t",
+      "type": "boolean",
+      "required": false,
+      "default": true,
+      "size": "",
+      "pattern": "",
+      "maxlength": "",
+      "label": {
+        "fr": "Ligne de titres",
+        "en": "Titles line"
+      },
+      "help": {
+        "en": "First line contains the columns titles.",
+        "fr": "Considérer que la premmière ligne contient les titres des colonnes."
+      }
+    },
+    "method": {
+      "alias": "m",
+      "type": "text",
+      "required": false,
+      "default": "insert",
+      "size": "medium",
+      "values": ["insert", "replace"],
+      "label": {
+        "fr": "Nom du traitement",
+        "en": "Statement name"
+      },
+      "help": {
+        "en": "Choose which statement to use for all generated queries.",
+        "fr": "Choissez le nom de methode d'insertion pour toutes requetes."
+      }
+    },
+    "delimiter": {
+      "alias": "d",
+      "type": "text",
+      "required": false,
+      "default": "\\n",
+      "size": "small",
+      "pattern": "",
+      "maxlength": "",
+      "label": {
+        "fr": "Delimiteur",
+        "en": "Delimiter"
+      },
+      "help": {
+        "fr": "Un ou plusieurs caractères séparant des portions de texte, typiquement une ligne de texte se finissant par [un caractère de fin de ligne](https://fr.wikipedia.org/wiki/Fin_de_ligne).",
+        "en": "A special character or sequence of characters signifying the end of a of text segment. For example [newline](https://en.wikipedia.org/wiki/Newline)"
+      }
+    }
+  }
+}

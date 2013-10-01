@@ -63,6 +63,23 @@
         "fr": "Considérer que la premmière ligne contient les titres des colonnes."
       }
     },
+    "createtable" : {
+      "alias": "ct",
+      "type": "boolean",
+      "required": false,
+      "default": false,
+      "size": "",
+      "pattern": "",
+      "maxlength": "",
+      "label": {
+        "fr": "Créer la table",
+        "en": "Create table"
+      },
+      "help": {
+        "en": "Add a query to create the table according to the titles of the first line.",
+        "fr": "Ajoute une requete de création de la table en fonction des titres de la première ligne."
+      }
+    },
     "method": {
       "alias": "m",
       "type": "text",

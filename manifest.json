@@ -1,8 +1,5 @@
 {
   "id": "csv2sql",
-  "author" : {
-    "name" : "core team"
-  },
   "title": {
     "fr" : "Converti du CSV en requete SQL d'insertion",
     "en" : "Convert CSV to SQL insert/update query"

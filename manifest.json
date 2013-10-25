@@ -16,7 +16,7 @@
       "required": true,
       "default": "mytable",
       "size": "medium",
-      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9-_:]*$",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_]*$",
       "maxlength": "",
       "label": {
         "fr": "Nom de table",
